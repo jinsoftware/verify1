@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            background: red;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Case Details Page</h2>
+    <p>This is the second page.</p>
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.location.href = "../index.html"; // Redirect back to home page
+        }
+    </script>
+
+</body>
+</html>
